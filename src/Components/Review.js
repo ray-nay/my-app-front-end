@@ -18,6 +18,7 @@ export default function Review (){
     <>
     <div>
       <b><p>Review:{selectedReviews.comment}</p></b>
+     
     </div>
 
     </>
