@@ -11,7 +11,7 @@ export default function Home({houses}) {
 
   return (
     <div id="card-content" className='row g-3'>
-    {houses.map(house=><HouseCard title={house.title} image={house.image} key={house.id} id ={house.id} />)}
+    {houses.map(house=><HouseCard title={house.title} img={house.img} key={house.id} id ={house.id} />)}
         
     </div>
   )
