@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Name of the Project
+House Hunt App
+### Author : Name Date
+Catherine Renee Mumbi 03/03/2023
+## Project Description
+This project is a single page application that displays to the user a list of all the available houses that are up for rent on the website.The user is able to view more details about the houses such as the description of the house as well as the price by clicking on the view more button.  The project incorporates a form that enables you to add a new house that is available for rent. It also displays previous reviews that have been left for the house in particular.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project SetUp 
+1. Clone the repository ( there are 2 repositories, one for the back end and one for the front end respectively)
 
-## Available Scripts
+https://github.com/ray-nay/phase-3-sinatra-react-project : This repository has all the starter code needed to get a Sinatra backend up and running.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://github.com/ray-nay/my-app-front-end
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies
+bundle install
+npm install
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bundle exec rake server - This will run your server on port http://localhost:9292.
+npm start - This will run your server on port http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open your browser and navigate to http://localhost:3000 to view the app.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To view the houses click on the Home button on the navbar to view all the available houses for rent.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To view more details about a particular house, click on the View More button which will show you the description of the house as well as the price. To exit this page, click on the Back button which will take you back to the home page.
 
-## Learn More
+To add a new house, click on the Add House button on the navbar and insert all the necessary details required on the form then press submit. It will alert you that the house has been added successfully. Navigate to the end of the list to see your added house.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+******
 
-### Code Splitting
+## Technologies Used
+1.ReactJS
+2.React Router
+3.Babel
+4.ESlint
+5.Node.js
+6.Ruby
+7.Sweet alert
+8.Postman
+9.Dbdiagram.io
+10.Sinatra
+*****
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Landing page 
+This is the landing page.
+![Landing page](./images/homepage.png)
+### Form page that is used to submit a new house.
+This is the page that holds the form used to submit a new house.
+![Submission page](./images/submit.png)
+### House display page
+This is the page that displays the house description, as well as the price after the user has clicked on the View More.
+![View page](./images/house1.png)
 
-### Analyzing the Bundle Size
+![View more page](./images/house2.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### ERD
+![ERD](./images/erd.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact Information
+* 1723renee@gmail.com
+*****
