@@ -1,8 +1,9 @@
 import React, {useEffect, useState, } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import HouseCard from './HouseCard'
+import Review from './Review'
 
-export default function ViewRecipe() {
+export default function ViewMore() {
 
   const [selectedHouses, setSelectedHouses] = useState({})
   let {id}=useParams()
@@ -23,9 +24,14 @@ console.log({id})
        <h1>{selectedHouses.title}</h1> 
         <p>{selectedHouses.desc}</p>
         <b><p>PRICE:{selectedHouses.price}</p></b>
+        {/* <p>{selectedHouses.user.review}</p> */}
+        
         <Link to={"/"} className="btn btn-primary">
           Back
         </Link>
+        <Review/>
      </div>
+     
   )
+  
 }
