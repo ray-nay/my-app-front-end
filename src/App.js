@@ -1,24 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home';
+import React, { useState, useEffect } from 'react';
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import Form from './Components/Form';
+import ViewMore from './Components/ViewMore';
+import NavBar from './Components/NavBar';
 
 function App() {
+  
+  const [houses, sethouses] = useState([])
+  useEffect(() => {
+    fetch("http://localhost:9292/houses")
+      .then(res => res.json())
+      .then((data) => sethouses(data))
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Goodluck on your project
-        </a>
-      </header>
-    </div>
+    
+    <BrowserRouter>
+      <div className="App">
+      <NavBar />
+        <Routes>
+          <Route path="/" element={<Home houses = {houses}  />} />
+          <Route path="/form" element={<Form houses={houses} sethouses={sethouses} />}/>
+          <Route path="/house/:id" element={<ViewMore />} />
+        </Routes>
+        
+      </div>
+    </BrowserRouter>
+
+
   );
 }
 
