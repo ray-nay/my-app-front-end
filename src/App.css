@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+#card-content{
+  padding: 1% 20% 3% ;
+}
+.Nav{
+  font-size: 24px;
+  text-align: left;
+  padding-left: 6%;
+  padding-top: 15px;
+}
+.Details{
+  padding: 1% 20% 3% ;
+}
+.Details img{
+  width: 50%;
+}
+.Details p{
+  text-align:justify;
+}
+.form{
+  padding: 1% 20% 3% ;
+}
